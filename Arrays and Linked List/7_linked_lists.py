@@ -33,9 +33,17 @@ class LinkedList:
         node = self.head
         while node.next:
             if node.value == value:
-                return value
-            value = value.next
+                return node
+            node = node.next
         
         return None
+
+    def pop(self):
+        first_node = self.head.value
+        self.head = self.head.next
+        return first_node
+    
+    def remove(self, value):
+        
 
 
