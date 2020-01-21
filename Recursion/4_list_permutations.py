@@ -23,4 +23,4 @@ def permutations(l):
         
         return output
 
-print(permutations([1,2,3,4]))
+print(permutations([1,2,3,4,5,6]))
